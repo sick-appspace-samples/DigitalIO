@@ -27,7 +27,7 @@ Connector.DigitalIn.register(gPortDI1, 'OnChange', 'gToggleOutput1')
 
 --Start of Function and Event Scope -------------------------------------------
 
--- Function is called when Input 1 changes
+---Function is called when Input 1 changes
 function gToggleOutput1(state)
   -- Toggle output #1 when input #2 is high
   if (Connector.DigitalIn.get(gPortDI2) == true) then
